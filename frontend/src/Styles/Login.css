@@ -1,0 +1,121 @@
+.login_box {
+  position: relative;
+  width: 600px;
+  min-height: 600px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-right: 3px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_box .heading {
+  display: flex;
+  align-items: center;
+}
+.login_box .form {
+  height: 300px;
+  width: 70%;
+  margin-top: 60px;
+}
+
+.login_box .heading img {
+  width: 130px;
+  height: 100px;
+}
+.login_box .heading h1 {
+  color: rgba(255, 255, 255);
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.login_box .form h1 {
+  position: relative;
+  text-align: center;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.login_box .form h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.login_box .form .input {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: 0 25px 25px  rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.login_box .form .enter_btn {
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.login_box .form .enter_btn:hover {
+  background: rgba(255, 255, 255);
+  transform: scale(1.02);
+}
+
+.login_box .form .login_err {
+  color: red;
+  width: fit-content;
+  margin: auto;
+  height: 20px;
+  padding-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .login_box {
+    width: 90%;
+    min-height: 500px;
+    max-width: 500px;
+  }
+  .login_box .heading img {
+    width: 70px;
+    height: 55px;
+  }
+  .login_box .heading h1 {
+    font-size: 35px;
+    margin-left: 6px;
+  }
+
+  .login_box .form {
+    width: 80%;
+    margin-top: 60px;
+  }
+  .login_box .form {
+    height: 210px;
+  }
+
+  .login_box .form h1 {
+    font-size: 30px;
+  }
+
+  .login_box .form .input {
+    height: 45px;
+    font-size: 16px;
+  }
+}

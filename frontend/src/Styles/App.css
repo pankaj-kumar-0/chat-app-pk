@@ -1,0 +1,35 @@
+section{
+    min-height: 100vh;
+    background: linear-gradient( to bottom , #f1f4f9, #dceffd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .bg-color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .bg-color:nth-child(1){
+    top: 10%;
+    left: 2%;
+    width: 30%;
+    height: 45%;
+    background: #ff2c97c4;
+}
+section .bg-color:nth-child(2){
+    bottom: 5%;
+    left: 25%;
+    width: 40%;
+    height: 45%;
+    background: #fbf981;
+}
+section .bg-color:nth-child(3){
+    bottom: 10%;
+    right: 5%;
+    width: 40%;
+    height: 55%;
+    background: #00d2ff;
+}
+
+ 

@@ -1,0 +1,79 @@
+.text_space {
+  position: relative;
+  border-radius: 25px;
+  margin: 10px 15px;
+  padding: 10px 25px;
+  max-width: 60%;
+  width: fit-content;
+  word-wrap: break-word;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+.text_space .msg_user_name {
+  font-weight: bold;
+}
+.text_space .recived_msg {
+  margin: 5px 0px;
+}
+.text_space .msg_user_time {
+  margin: -7px 0px;
+  font-size: 11px;
+  margin-top: -6px;
+  margin-left: auto;
+  width: fit-content;
+  opacity: 0.7;
+}
+
+.right {
+  border-bottom-right-radius: 0px;
+  position: relative;
+  margin-left: auto;
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.left {
+  border-bottom-left-radius: 0px;
+  background: linear-gradient(208deg, #b721ff 30%, #21d4fd 100%);
+  color: white;
+}
+
+.notice_box {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(150px);
+  color: #0004ff;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  padding: 7px 25px;
+  max-width: 50%;
+  width: fit-content;
+  border-radius: 40px;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .notice_box {
+    max-width: 90%;
+    font-size: 14px;
+    padding: 5px 25px;
+  }
+
+  .text_space .msg_user_time {
+    font-size: 10px;
+    margin: -2px 0px;
+    margin-top: -7px;
+    margin-left: auto;
+  }
+
+  .text_space {
+    margin: 10px 6px;
+    padding: 3px 20px;
+    max-width: 70%;
+    font-size: 14px;
+  }
+  .right {
+    margin-left: auto;
+  }
+}
